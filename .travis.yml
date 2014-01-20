@@ -1,0 +1,7 @@
+language: objective-c
+env:
+  matrix:
+    - EMACS=emacs
+before_install:
+script:
+  - uname -a && printenv
