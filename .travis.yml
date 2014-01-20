@@ -4,4 +4,4 @@ env:
     - EMACS=emacs
 before_install:
 script:
-  - uname -a && printenv
+  - make check
