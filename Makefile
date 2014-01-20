@@ -1,4 +1,8 @@
 check:
+	git clone --depth=1 --branch=master "https://github.com/mhayashi1120/MacEmacs-Test.git" ./Test
+	cd ./Test && make check
+
+check2:
 	emacs -version
 	brew install emacs --cocoa
 	emacs -version
