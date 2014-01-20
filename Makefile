@@ -1,6 +1,3 @@
 check:
-	sqlite3 hoge.db "SELECT 1;"
-	TERM=dumb sqlite3 hoge.db "SELECT 1;"
-	emacs -batch -eval '(shell-command "sqlite3 hoge.db \"select 1;\"")'
-	TERM=dumb emacs -batch -eval '(shell-command "sqlite3 hoge.db \"select 1;\"")'
-
+	git clone "https://github.com/mhayashi1120/Emacs-esqlite.git" ./esqlite
+	cd ./esqlite && git submodule init && git submodule update && make check
